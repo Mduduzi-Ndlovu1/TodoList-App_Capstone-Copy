@@ -1,0 +1,45 @@
+
+<%- include("partials/header.ejs") %>
+
+<div class="form-container">
+  <h1>Todo List</h1>
+
+  <form action="/submit" method="post">
+    <input type="text" placeholder="Please Enter your Task Here">
+    <button class="form-button" type="submit">Add Task</button>
+  </form>
+
+  <div class="task-container">
+    <div class="task">
+      <p>Here lies the Task</p>
+      <div class="button-container">
+        <button class="done">Done</button>
+        <button class="edit">Edit</button>
+        <button class="remove">Remove</button>
+      </div>
+      
+    </div>
+    <div class="task">
+      <p>Here lies the Task</p>
+      <div class="button-container">
+        <button class="done"></button>
+        <button class="edit"></button>
+        <button class="remove"></button>
+      </div>
+      
+    </div>
+    <div class="task">
+      <p>Here lies the Task</p>
+      <div class="button-container">
+        <button class="done"></button>
+        <button class="edit"></button>
+        <button class="remove"></button>
+      </div>
+      
+    </div>
+    
+  </div>
+</div>
+
+
+<%- include("partials/footer.ejs") %>
